@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Practice</title>
+</head>
+
+<!-- time: 4:00:00 -->
+<body style="padding-bottom: 1000px;">
+  
+
+  <div style="
+  display: flex;
+  flex-direction: row;
+  ">
+  <div style="background-color: lightblue;"> div 1 text</div>
+  <div style="background-color: lightpink;"> div 2 <p>paragraf</p></div>
+</div>
+
+
+
+
+<div style="
+margin-top: 30px;
+display: flex;
+flex-direction: row;
+">
+<div style="
+background-color: lightblue;
+width: 100px;
+"> 100px</div>
+
+<div style="
+background-color: lightpink;
+flex: 1;
+"> flex: 1</div>
+
+<div style="
+background-color: lightblue;
+flex: 2;
+"> flex 2</div>
+
+<div style="
+background-color: lightpink;
+flex: 1;
+"> flex: 1</div>
+</div>
+
+
+
+<div style="
+margin-top: 30px;
+display: flex;
+flex-direction: row;
+">
+<div style="
+background-color: lightblue;
+width: 100px;
+"> 100px</div>
+
+<div style="
+background-color: lightpink;
+flex: 1;
+"> flex: 1</div>
+
+<div style="
+background-color: lightblue;
+flex: 2;
+"> flex: 2</div>
+</div>
+
+<div style="
+margin-top: 30px;
+height: 70px;
+border-width: 1px;
+border-style: solid;
+border-color: gray;
+
+display: flex;
+flex-direction: row;
+/* justify-content: end; */
+justify-content: center;
+">
+<div style="
+background-color: lightblue;
+width: 100px;
+"> 100px</div>
+
+<div style="
+background-color: lightpink;
+width: 100px;
+"> 100px</div>
+
+<div style="
+background-color: lightblue;
+width: 100px;
+"> 100px</div>
+</div>
+
+
+
+<div style="
+margin-top: 30px;
+height: 70px;
+border-width: 1px;
+border-style: solid;
+border-color: gray;
+
+display: flex;
+flex-direction: row;
+/* justify-content: end; */
+justify-content: space-between;
+">
+<div style="
+background-color: lightblue;
+width: 100px;
+"> 100px</div>
+
+<div style="
+background-color: lightpink;
+width: 100px;
+"> 100px</div>
+
+<div style="
+background-color: lightblue;
+width: 100px;
+"> 100px</div>
+</div>
+
+
+
+<div style="
+margin-top: 30px;
+height: 70px;
+border-width: 1px;
+border-style: solid;
+border-color: gray;
+
+display: flex;
+flex-direction: row;
+/* justify-content: end; */
+justify-content: space-between;
+align-items: start;
+/* align-items: center; */
+/* align-items: end; */
+/* align-items: stretch; */
+">
+<div style="
+background-color: lightblue;
+width: 100px;
+"> 100px</div>
+
+<div style="
+background-color: lightpink;
+width: 100px;
+"> 100px</div>
+
+<div style="
+background-color: lightblue;
+width: 100px;
+"> 100px</div>
+</div>
+
+<!-- 
+  Theory Part:
+  Flexbox:
+Flexbox requires a container or this outer div.
+
+   display: flex;
+   flex-direction: row;
+
+   This means we're going to align these elements horizontally in a horizontal layout. So inside of Flexbox, these divs, which are block elements, don't behave like block elements anymore. They only take up as much horizontal space as they nedd to. Now compare that to grid where we first set the columns and then the elements went inside the columns. So the layout is a title more rigid for grid.
+
+   If we add some more text to this first div and save notice that it expands to take up as much space as it needs to. So this is a flexible box and that's why we call it flex box. Now ther's one other thing I want to point out about flex box is that if we make this second div taller, just like our grid example here, the flex box will be vertically aligned.
+
+   Short explain:
+    What difference between grid system and flexbox system.
+   1. Flexbox. When we write add text, it's added horizontal.
+   2. Grid. When we write add text, it's added vertical.
+
+   Let's go into our code and let's add a paragraph to make this div is taller. we can see that it got taller, but we still maintain vertical alignment.
+
+   flex: 1;
+   it means like '1fr' in grid system.
+   And we can contiuning this process, we can write:
+   flex: 2;
+
+   So this element with flex two is going to take twice the amount of the remaining as this element with flex one. So the value here works the same as E value with fr.
+
+   Short explain:
+    flex: 2 = 2*(flex: 1) 
+
+  The layout is more rigid (for Grid).
+  We can see examples in grid.html. You'll see that we first define three columns and then these elements go into those columns. If we to change places divs position in grid system, layout is not change.
+
+  Grid = rigid layout.
+  Flexbox = flexible layout.
+
+  Flexbox vs Grid
+    Which one to use?
+
+    If we have only 3 element or less element, and they are position change, in this position, flexbox is more suitable. 
+
+  
+<div style="
+margin-top: 30px;
+height: 70px;
+border-width: 1px;
+border-style: solid;
+border-color: gray;
+display: flex;
+flex-direction: row;
+
+">
+<div style="
+background-color: lightblue;
+width: 100px;
+"> 100px</div>
+
+<div style="
+background-color: lightpink;
+width: 100px;
+"> 100px</div>
+
+<div style="
+background-color: lightblue;
+width: 100px;
+"> 100px</div>
+</div>
+
+so we can actually change how they are aligned horizontally. To do that, we'rengoing to use a flex box property called justify dash content.
+
+justify-content:
+it reply for space between elements side of horizontal.
+
+align-items:
+it reply for space between element side of vertical.
+ -->
+
+ <!-- 
+  Vocabulary:
+    1.  layout - tartib.
+    2.  bahave - o'zini tutmoq, harakat qilmoq.
+    3.  any more - bundan buyon, ortiq, endi.
+    4.  rigid - qattiq, jiddiy, egilmaydigan.
+    5.  expand - kengaytirmoq.
+    6.  maintain - saqlab turish.
+    7.  remaining - qolgan.
+    8.  relatively - nisbatan.
+    9.  roughly - taxminan.
+    10. justify content - mazmunini asoslash.
+  -->
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Header</title>
+  <link rel="stylesheet" href="/header.css">
+  <link rel="stylesheet" href="/general.css">
+</head>
+<body>
+
+  <!--https://supersimple.dev/exercises/youtube -->
+  <div class="header">
+    <div class="left-section">
+        <img class="humburger-menu" src="/icon-pictures/hamburger-menu.svg" alt="">
+        <img class="youtube-logo" src="/icon-pictures/youtube-logo.svg" alt="">
+    </div>
+
+
+    <div class="middle-section">
+      <input class="search-bar" type="text" placeholder="Search">
+      <button class="search-button">
+        <img class="search-icon" src="/icon-pictures/search.svg" alt="">
+        <div class="tooltip" >Search</div>
+      </button>
+      <button class="voice-search-button">
+        <img class="voice-search-icon" src="/icon-pictures/voice-search-icon.svg" alt="">
+        <div class="tooltip">Search with your voice</div>
+      </button>
+    </div>
+
+
+    <div class="right-section">
+      <div class="upload-icon-container">
+        <img class="upload-icon" src="/icon-pictures/upload.svg" alt="">
+        <div class="tooltip">Create</div>
+      </div>
+
+      <div class="upload-icon-container">
+        <img class="youtube-icon" src="/icon-pictures/youtube-apps.svg" >
+        <div class="tooltip">YouTube apps</div>
+      </div>
+
+      <div class="notifications-icon-container">
+        <div class="upload-icon-container">
+          <img class="notifications-icon" src="/icon-pictures/notifications.svg">
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+      </div>
+
+      <img class="current-user-picture" src="/my-channel.jpeg" >
+    </div>
+  </div>
+
+
+<!-- 
+Theory Part:
+    flex-shrink: ;
+What is Flex-Shrink used for in CSS?
+CSS flex-shrink Property - GeeksforGeeks
+The flex-shrink property specifies how much the item will shrink compared to other items inside that container. It defines the ability of an element to shrink in comparison to the other elements which are placed inside the same container. 
+  1. if flex-shrink: 0;
+    container is shorter continuously when you stop.
+    but inside the elements not near each other.
+
+  2. if flex-shrink: 1;
+     container is shorter continuously when you stop.
+    but inside the elements continously near each other.
+  -->
+</body>
+</html>
